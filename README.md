@@ -23,7 +23,6 @@ Este projeto está em constante evolução. As próximas etapas de desenvolvimen
 
 - [ ] **Refatoração do Código**: Migrar de múltiplas listas para Dicionários ou Classes (POO) para melhor organização.
 - [ ] **Persistência de Dados**: Integração com Banco de Dados **MySQL** para salvar os registros permanentemente.
-- [ ] **Interface Gráfica**: Possível implementação de uma interface visual no futuro.
 
 ## 📦 Como Executar
 
