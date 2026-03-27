@@ -1,4 +1,5 @@
 import json
+from datetime import datetime
 
 try:
     with open("banco.json", "r", encoding="utf-8") as arquivo:
@@ -84,6 +85,10 @@ def adicionar_peca_como_produto(nome_busca):
         return len(nomes_produtos) - 1
 
     return -1
+
+
+def agora_formatado():
+    return datetime.now().strftime("%d/%m/%Y %H:%M:%S")
 
 
 # Variáveis iniciais (mesma estrutura de listas)
@@ -214,7 +219,9 @@ while True:
             estoque_atual[i] -= qtd
             valor_venda = qtd * precos_venda[i]
             faturamento_total += valor_venda
-            historico_vendas.append(f"Venda: {qtd}x {nomes_produtos[i]} - Total: R${valor_venda:.2f}")
+            historico_vendas.append(
+                f"[{agora_formatado()}] Venda: {qtd}x {nomes_produtos[i]} - Total: R${valor_venda:.2f}"
+            )
             salvar_banco()
             print(f"Venda registrada! Faturamento: +R${valor_venda:.2f}")
         else:
