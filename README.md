@@ -48,5 +48,11 @@ python Projeto1EtapaPython.py
 - `Projeto1EtapaPython.py`: aplicação principal (menu, regras e persistência).
 - `banco.json`: base de dados JSON.
 
+## 👥 Alunos
+
+- Pedro Gonçalves
+- Pedro Da Silva
+- Lucca Freitas
+
 ---
 *Desenvolvido como parte do projeto da 1ª Etapa de Python.*
